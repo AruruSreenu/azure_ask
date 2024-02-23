@@ -1,0 +1,17 @@
+server:
+  port: 8081
+  error:
+    include-message: always
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: InductiveAutomation
+    password: Automation@2640
+    url: jdbc:mysql://inductiveautomationsever.mysql.database.azure.com:3306/user_db?useSSL=true&requireSSL=false
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    open-in-view: true
